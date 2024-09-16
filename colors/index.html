@@ -11,40 +11,43 @@
     <body style="background-color: beige;">
         <h1>Colors</h1>
         <h2>An RPG gambling game</h2>
+        <h2>🚧 W.I.P. 🚧</h2>
         <button onclick="testFunc()">Blue (x2)</button>
         <button onclick="testFunc()">Green (x3)</button>
         <button onclick="testFunc()">Yellow (x6)</button>
         <button onclick="testFunc()">Red (x20)</button>
         <br/>
-        <div class="grid-container">  <!--(y, x) I'm dumb-->
-            <div class="grid-item blue"></div>  <!--(1, 1)-->
-            <div class="grid-item blue"></div>  <!--(1, 2)-->
-            <div class="grid-item green"></div>  <!--(1, 3)-->
-            <div class="grid-item blue"></div>  <!--(1, 4)-->
-            <div class="grid-item blue"></div>  <!--(1, 5)-->
-            <div class="grid-item blue"></div>  <!--2, 1)-->
-            <div class="grid-item green"></div>  <!--(2, 2)-->
-            <div class="grid-item yellow"></div>  <!--(2, 3)-->
-            <div class="grid-item green"></div>  <!--(2, 4)-->
-            <div class="grid-item blue"></div>  <!--(2, 5)-->
-            <div class="grid-item green"></div>  <!--(3, 1)-->
-            <div class="grid-item yellow"></div>  <!--(3, 2)-->
-            <div class="grid-item red"></div>  <!--(3, 3)-->
-            <div class="grid-item yellow"></div>  <!--(3, 4)-->
-            <div class="grid-item green"></div>  <!--(3, 5)-->
-            <div class="grid-item blue"></div>  <!--(4, 1)-->
-            <div class="grid-item green"></div>  <!--(4, 2)-->
-            <div class="grid-item yellow"></div>  <!--(4, 3)-->
-            <div class="grid-item green"></div>  <!--(4, 4)-->
-            <div class="grid-item blue"></div>  <!--(4, 5)-->
-            <div class="grid-item blue"></div>  <!--(5, 1)-->
-            <div class="grid-item blue"></div>  <!--(5, 2)-->
-            <div class="grid-item green"></div>  <!--(5, 3)-->
-            <div class="grid-item blue"></div>  <!--(5, 4)-->
-            <div class="grid-item blue"></div>  <!--(5, 5)-->
+        <div id="myThing" class="grid-container">  <!--(y, x) I'm dumb-->
+            <div id="pos-0" class="grid-item blue"></div>  <!--(1, 1)-->
+            <div id="pos-1" class="grid-item blue"></div>  <!--(1, 2)-->
+            <div id="pos-2" class="grid-item green"></div>  <!--(1, 3)-->
+            <div id="pos-3" class="grid-item blue"></div>  <!--(1, 4)-->
+            <div id="pos-4" class="grid-item blue"></div>  <!--(1, 5)-->
+            <div id="pos-5" class="grid-item blue"></div>  <!--2, 1)-->
+            <div id="pos-6" class="grid-item green"></div>  <!--(2, 2)-->
+            <div id="pos-7" class="grid-item yellow"></div>  <!--(2, 3)-->
+            <div id="pos-8" class="grid-item green"></div>  <!--(2, 4)-->
+            <div id="pos-9" class="grid-item blue"></div>  <!--(2, 5)-->
+            <div id="pos-10" class="grid-item green"></div>  <!--(3, 1)-->
+            <div id="pos-11" class="grid-item yellow"></div>  <!--(3, 2)-->
+            <div id="pos-12" class="grid-item red"></div>  <!--(3, 3)-->
+            <div id="pos-13" class="grid-item yellow"></div>  <!--(3, 4)-->
+            <div id="pos-14" class="grid-item green"></div>  <!--(3, 5)-->
+            <div id="pos-15" class="grid-item blue"></div>  <!--(4, 1)-->
+            <div id="pos-16" class="grid-item green"></div>  <!--(4, 2)-->
+            <div id="pos-17" class="grid-item yellow"></div>  <!--(4, 3)-->
+            <div id="pos-18" class="grid-item green"></div>  <!--(4, 4)-->
+            <div id="pos-19" class="grid-item blue"></div>  <!--(4, 5)-->
+            <div id="pos-20" class="grid-item blue"></div>  <!--(5, 1)-->
+            <div id="pos-21" class="grid-item blue"></div>  <!--(5, 2)-->
+            <div id="pos-22" class="grid-item green"></div>  <!--(5, 3)-->
+            <div id="pos-23" class="grid-item blue"></div>  <!--(5, 4)-->
+            <div id="pos-24" class="grid-item blue"></div>  <!--(5, 5)-->
         </div>
         <br/>
-        <button onclick="testFunc()">Run Game</button>
+        <button onclick="runGame(500)">Run Game</button>
+        <button onclick="runGame(100)">Run Game (fast)</button>
+        <button onclick="reset()">Reset</button>
         <script src="./main.js"></script>
     </body>
 </html>
